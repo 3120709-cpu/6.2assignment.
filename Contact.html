@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Contact.css">
+
+</head>
+<style>
+    body{
+        background-color: rgb(85, 63, 107);
+    }
+</style>
+<body>
+    <ul>
+      <a href="#">
+        <img src="Logo.webp" alt="Logo" width="50" height="50">
+    </a>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="Summary.html">Summary</a></li>
+        <li><a href="Music.html">Music</a></li>
+        <li><a href="Contact.html">Contact</a></li>
+    </ul>
+
+<h1>Contact Page</h1>
+<h2>Get in Touch</h2>
+<p>If you would like to get in touch with us for bookings, inquiries, or just to say hello, please use the contact information below:</p>
+  
+<form id="myForm">
+    <label>Name:</label>
+    <input type="text" name="name" required><br><br>
+
+    <label>Email:</label>
+    <input type="email" name="email" required><br><br>
+
+    <label>Phone Number:</label>
+    <input type="tel" name="phone" required><br><br>
+
+    <label>Message:</label><br>
+    <textarea name="message" rows="5" cols="30" required></textarea><br><br>
+
+    <button type="button" id="saveBtn">Save</button>
+  </form>
+
+  <script>
+    document.getElementById("saveBtn").addEventListener("click", function () {
+      const form = document.getElementById("myForm");
+      const formData = new FormData(form);
+
+      console.log("Saving data...");
+      for (let [key, value] of formData.entries()) {
+        console.log(`${key}: ${value}`);
+      }
+
+      form.reset();
+    });
+  </script>
+
+</body>
+</html>

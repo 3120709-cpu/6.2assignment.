@@ -1,0 +1,42 @@
+h1{
+    font-style: italic; /* Makes the font italic */
+    text-align: center; /* Centers the text */
+ }
+ body {
+    background-color: #f0f0f0; /* Sets a light gray background color */
+    margin: 0; /* Removes default margin */
+    padding: 0; /* Removes default padding */
+    width: 100%; /* Sets width to 100% of the viewport */
+  }
+  
+  h2, p {
+    margin: 10px; /* Adds margin around h2 and p elements */
+  }
+  
+  ul {
+    list-style-type: none; /* Removes default list styling */
+    margin: 0; /* Removes default margin */
+    padding: 0; /* Removes default padding */
+    overflow: hidden; /* Ensures the list contains its floated children */
+    background-color: #333333; /* Sets a dark background color for the navigation bar */
+  }
+  
+  ul li {
+    float: left; /* Floats list items to the left */
+  }
+  
+  ul li a {
+    display: block; /* Makes the link a block element */
+    color: white; /* Sets link text color to white */
+    text-align: center; /* Centers the text within the link */
+    padding: 14px 16px; /* Adds padding around the link */
+    text-decoration: none; /* Removes underline from links */
+  }
+  
+  ul li a:hover {
+    background-color: #111111; /* Changes background color on hover */
+  }
+
+p, h1, h2, label{
+  color: white; /* Sets text color to white */
+}
